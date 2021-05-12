@@ -4,17 +4,22 @@
 
 Cliente:
 
-- Nome de Usuário;
+- Nome de usuário;
 - Senha;
+- Carrinho;
 
 Fornecedor:
 
-- Nome da Empresa;
+- Nome da empresa;
 - Categoria do produto fornecido;
 
 Categoria:
 
 Classe de enumeração onde estão dispostas as categorias dos produtos.
+
+Forma de Pagamento:
+
+Classe de enumeração onde estão dispostas as formas de pagamento.
 
 Produto:
 
@@ -32,7 +37,7 @@ Carrinho:
 
 Loja:
 
-- Carrinho;
+- Nome;
 - Lista de clientes;
 - Lista de produtos;
 - Lista de fornecedores;
