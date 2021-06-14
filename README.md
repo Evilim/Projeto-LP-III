@@ -26,6 +26,7 @@ Produto:
 - Nome do produto;
 - Categoria;
 - Peso;
+- Frete;
 - Altura;
 - Largura;
 - Valor unitário;
