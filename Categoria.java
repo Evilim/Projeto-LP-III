@@ -1,0 +1,3 @@
+public enum Categoria{
+    PERECIVEL,MOBILIA,ELETRODOMESTICO;
+}
