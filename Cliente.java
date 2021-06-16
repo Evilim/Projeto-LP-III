@@ -4,10 +4,10 @@ public class Cliente{
     private FormaDePagamento pagamento;
     private Carrinho carrinho;
 
-    public Cliente(String nome,String senha){
+    public Cliente(String nome,String senha,Carrinho carrinho){
         this.nome=nome;
         this.senha=senha;
-        this.carrinho=new Carrinho();
+        this.carrinho=carrinho;
     }
 
     public String getNome(){
