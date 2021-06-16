@@ -40,14 +40,18 @@ public class Produto{
         return this.valorunitario;
     }
 
-    public double setFrete(Categoria categoria){
+    public double getFrete(){
+        return this.frete;
+    }
+
+    public void setFrete(Categoria categoria,double frete){
         switch(categoria){
             case PERECIVEL:
-                return this.frete=10.0;
+                this.frete=10;
             case MOBILIA:
-                return this.frete=15.0;
+                this.frete=15;
             case ELETRODOMESTICO:
-                return this.frete=20.0;
+                this.frete=20;
             default:
                 break;
         }
