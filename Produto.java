@@ -1,4 +1,5 @@
 public class Produto{
+    private int id;
     private String nome;
     private Categoria categoria;
     private double peso;
@@ -7,13 +8,18 @@ public class Produto{
     private double valorunitario;
     private double frete;
 
-    public Produto(String nome,Categoria categoria,double peso,double altura,double largura,double valorunitario){
+    public Produto(int id,String nome,Categoria categoria,double peso,double altura,double largura,double valorunitario){
+        this.id=id;
         this.nome=nome;
         this.categoria=categoria;
         this.peso=peso;
         this.altura=altura;
         this.largura=largura;
         this.valorunitario=valorunitario;
+    }
+
+    public int getID(){
+        return this.id;
     }
 
     public String getNome(){
