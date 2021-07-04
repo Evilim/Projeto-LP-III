@@ -6,6 +6,7 @@ Cliente:
 
 - Nome de usuário;
 - Senha;
+- Forma de Pagamento;
 - Carrinho;
 
 Fornecedor:
@@ -23,6 +24,7 @@ Classe de enumeração onde estão dispostas as formas de pagamento.
 
 Produto:
 
+- Número de identificação;
 - Nome do produto;
 - Categoria;
 - Peso;
