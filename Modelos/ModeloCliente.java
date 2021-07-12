@@ -4,12 +4,10 @@ public class ModeloCliente{
     private String nome;
     private String senha;
     private ModeloFormaDePagamento pagamento;
-    private ModeloCarrinho carrinho;
 
-    public ModeloCliente(String nome,String senha,ModeloCarrinho carrinho){
+    public ModeloCliente(String nome,String senha){
         this.nome=nome;
         this.senha=senha;
-        this.carrinho=carrinho;
     }
 
     public String getNome(){

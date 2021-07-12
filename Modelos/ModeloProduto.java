@@ -7,7 +7,6 @@ public class ModeloProduto{
     private double altura;
     private double largura;
     private double valorunitario;
-    private double frete;
 
     public ModeloProduto(int id,String nome,ModeloCategoria categoria,double peso,double altura,double largura,double valorunitario){
         this.id=id;
@@ -48,19 +47,6 @@ public class ModeloProduto{
     }
 
     public double getFrete(){
-        return this.frete;
-    }
-
-    public void setFrete(ModeloCategoria categoria,double frete){
-        switch(categoria){
-            case PERECIVEL:
-                this.frete=10;
-            case MOBILIA:
-                this.frete=15;
-            case ELETRODOMESTICO:
-                this.frete=20;
-            default:
-                break;
-        }
+        return this.categoria.getValor()+peso+largura+altura;
     }
 }

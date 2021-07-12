@@ -1,17 +1,17 @@
 package Modelos;
 import java.util.List;
 import java.util.ArrayList;
+import Controles.ControleProduto;
+
 public class ModeloCarrinho{
-    private List<ModeloProduto> produtos;
-    private ModeloProduto produto;
+    private ControleProduto produtos;
     private double valortotal;
 
-    public ModeloCarrinho(List<ModeloProduto> produtos,double valortotal){
-        this.produtos=new ArrayList<>();
-        this.valortotal=valortotal;
+    public ModeloCarrinho(ControleProduto produtos){
+        this.produtos=produtos;
     }
 
-    public void addProduto(List<ModeloProduto> produtos){
-        produtos.add(produto);
+    public void addProduto(ModeloProduto produto){
+        valortotal+=produto.getValor()+produto.getFrete();
     }
 }
