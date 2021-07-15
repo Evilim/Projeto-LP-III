@@ -1,17 +1,22 @@
 package Modelos;
 public class ModeloProduto{
     private int id;
+    private int qtd;
+
     private String nome;
-    private ModeloCategoria categoria;
+    
     private double peso;
     private double altura;
     private double largura;
     private double valorunitario;
 
-    public ModeloProduto(int id,String nome,ModeloCategoria categoria,double peso,double altura,double largura,double valorunitario){
+    private ModeloCategoria categoria;
+
+    public ModeloProduto(int id,int qtd,String nome,ModeloCategoria perecivel,double peso,double altura,double largura,double valorunitario){
         this.id=id;
+        this.qtd=qtd;
         this.nome=nome;
-        this.categoria=categoria;
+        this.categoria=perecivel;
         this.peso=peso;
         this.altura=altura;
         this.largura=largura;
@@ -22,12 +27,16 @@ public class ModeloProduto{
         return this.id;
     }
 
-    public String getNome(){
-        return this.nome;
+    public int getQtd(){
+        return this.qtd;
     }
 
-    public ModeloCategoria getCategoria(){
-        return this.categoria;
+    public void setQtd(int qtd){
+        this.qtd=qtd;
+    }
+
+    public String getNome(){
+        return this.nome;
     }
 
     public double getPeso(){
@@ -48,5 +57,9 @@ public class ModeloProduto{
 
     public double getFrete(){
         return this.categoria.getValor()+peso+largura+altura;
+    }
+
+    public ModeloCategoria getCategoria(){
+        return this.categoria;
     }
 }
