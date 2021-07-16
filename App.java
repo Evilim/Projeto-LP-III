@@ -102,8 +102,8 @@ public class App{
                 leitor.nextLine();
                 switch(opcao){
                     case 1:
-                        for(ModeloFornecedor fornecedor:cFornecedores.getFornecedores()){
-                            vProduto.printLista(fornecedor.getLista());
+                        for(ModeloFornecedor f:cFornecedores.getFornecedores()){
+                            vProduto.printLista(f.getLista());
                         }
                         System.out.printf("(1) Adicionar produto ao carrinho\n(2) Finalizar a compra\n");
                         opcao=leitor.nextInt();
